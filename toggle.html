@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Bright Toggle</title>
+    <style>
+      body.dark-mode {
+        background-color: #333;
+        color: #fff;
+      }
+      .container {
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dark Bright Toggle</h1>
+      <label class="switch">
+        <input type="checkbox" id="toggle" onchange="toggleTheme()" />
+        <span class="slider round"></span>
+      </label>
+      <p>Toggle dark and bright mode</p>
+    </div>
+
+    <script>
+      // Function to toggle between dark and bright mode
+      function toggleTheme() {
+        const body = document.body;
+        body.classList.toggle("dark-mode");
+      }
+    </script>
+  </body>
+</html>
